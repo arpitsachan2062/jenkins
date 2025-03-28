@@ -1,7 +1,7 @@
 import requests
 
 # Define the base URL for the API
-base_url = "https://9b59-2401-4900-8845-31ce-e58b-56cd-3386-628e.ngrok-free.app/services/json/v1"
+base_url = "https://67fa-2405-201-6804-9151-cc49-2824-66d1-9f40.ngrok-free.app/services/json/v1"
 
 # List of review IDs to pass
 review_ids = [52, 12, 1]  # Add more review IDs as needed
@@ -37,7 +37,7 @@ for review_id in review_ids:
     response = requests.post(base_url, json=[
         {"command": "Examples.checkLoggedIn"},
         {"command": "SessionService.authenticate", 
-         "args": {"login": "arpit.sachan", "ticket": "a52a5848abc217105b114d643e131cd4"}},
+         "args": {"login": "arpit.sachan", "ticket": "4832766ad217363cb25a586536a6c4f1"}},
         {"command": "ReviewService.getVersions", 
          "args": {"reviewId": review_id}
         }
